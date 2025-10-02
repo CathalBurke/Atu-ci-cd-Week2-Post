@@ -25,6 +25,11 @@ public class ProductController {
         myList.add(myProduct);
         return myProduct;
     }
+    @PostMapping("/addProducts")
+    public List<Product> addProducts(@RequestBody List<Product> myProducts) {
+        myList.addAll(myProducts);
+        return myProducts;
+    }
 
 }
 
