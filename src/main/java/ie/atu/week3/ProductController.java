@@ -17,10 +17,9 @@ public class ProductController {
     }
     @GetMapping("/getProducts")
     public List<Product> getProducts() {
-        Product myProduct = new Product("Tv",499);
         return myList;
     }
-    @PatchMapping("/addProduct")
+    @PostMapping("/addProduct")
     public Product addProduct(@RequestBody Product myProduct) {
 
         myList.add(myProduct);
