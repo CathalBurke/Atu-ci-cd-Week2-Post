@@ -15,10 +15,10 @@ public class ProductController {
     public String hello() {
         return "hello";
     }
-    @GetMapping("/getProduct")
-    public Product getProduct() {
+    @GetMapping("/getProducts")
+    public List<Product> getProducts() {
         Product myProduct = new Product("Tv",499);
-        return myProduct;
+        return myList;
     }
     @PatchMapping("/addProduct")
     public Product addProduct(@RequestBody Product myProduct) {
