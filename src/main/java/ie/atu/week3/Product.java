@@ -1,8 +1,6 @@
 package ie.atu.week3;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -10,6 +8,7 @@ import lombok.Data;
 @AllArgsConstructor
 public class Product {
     @NotBlank
+    @Size(max = 12)
     private String ProductName;
     @Positive
     @NotNull
