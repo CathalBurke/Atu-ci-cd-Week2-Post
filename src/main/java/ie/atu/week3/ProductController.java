@@ -32,5 +32,11 @@ public class ProductController {
         return myProducts;
     }
 
+    // Homework assignment
+    @GetMapping("/productCount")
+    public int getProductCount() {
+        return myList.size();
+    }
+
 }
 
